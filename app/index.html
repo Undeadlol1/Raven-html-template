@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Google maps must load before content of the page is rendered -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -349,7 +351,6 @@
     </script>
     <!-- build:js scripts/main.js -->
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/hello.js"></script>

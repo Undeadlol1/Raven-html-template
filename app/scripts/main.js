@@ -1,3 +1,8 @@
+ 'use strict';
+
+
+
+
  jQuery(document).ready(function($) {
 
      /* projects.html */
@@ -89,8 +94,8 @@
          }]
      });
 
- });
 
+ });
 
 
 
@@ -99,79 +104,79 @@
  function initialize() {
      var mapCanvas = document.getElementById('map');
      var styles = [{
-         "featureType": "landscape",
-         "stylers": [{
-             "saturation": -100
+         'featureType': 'landscape',
+         'stylers': [{
+             'saturation': -100
          }, {
-             "lightness": 65
+             'lightness': 65
          }, {
-             "visibility": "on"
+             'visibility': 'on'
          }]
      }, {
-         "featureType": "poi",
-         "stylers": [{
-             "saturation": -100
+         'featureType': 'poi',
+         'stylers': [{
+             'saturation': -100
          }, {
-             "lightness": 51
+             'lightness': 51
          }, {
-             "visibility": "simplified"
+             'visibility': 'simplified'
          }]
      }, {
-         "featureType": "road.highway",
-         "stylers": [{
-             "saturation": -100
+         'featureType': 'road.highway',
+         'stylers': [{
+             'saturation': -100
          }, {
-             "visibility": "simplified"
+             'visibility': 'simplified'
          }]
      }, {
-         "featureType": "road.arterial",
-         "stylers": [{
-             "saturation": -100
+         'featureType': 'road.arterial',
+         'stylers': [{
+             'saturation': -100
          }, {
-             "lightness": 30
+             'lightness': 30
          }, {
-             "visibility": "on"
+             'visibility': 'on'
          }]
      }, {
-         "featureType": "road.local",
-         "stylers": [{
-             "saturation": -100
+         'featureType': 'road.local',
+         'stylers': [{
+             'saturation': -100
          }, {
-             "lightness": 40
+             'lightness': 40
          }, {
-             "visibility": "on"
+             'visibility': 'on'
          }]
      }, {
-         "featureType": "transit",
-         "stylers": [{
-             "saturation": -100
+         'featureType': 'transit',
+         'stylers': [{
+             'saturation': -100
          }, {
-             "visibility": "simplified"
+             'visibility': 'simplified'
          }]
      }, {
-         "featureType": "administrative.province",
-         "stylers": [{
-             "visibility": "off"
+         'featureType': 'administrative.province',
+         'stylers': [{
+             'visibility': 'off'
          }]
      }, {
-         "featureType": "water",
-         "elementType": "labels",
-         "stylers": [{
-             "visibility": "on"
+         'featureType': 'water',
+         'elementType': 'labels',
+         'stylers': [{
+             'visibility': 'on'
          }, {
-             "lightness": -25
+             'lightness': -25
          }, {
-             "saturation": -100
+             'saturation': -100
          }]
      }, {
-         "featureType": "water",
-         "elementType": "geometry",
-         "stylers": [{
-             "hue": "#ffff00"
+         'featureType': 'water',
+         'elementType': 'geometry',
+         'stylers': [{
+             'hue': '#ffff00'
          }, {
-             "lightness": -25
+             'lightness': -25
          }, {
-             "saturation": -97
+             'saturation': -97
          }]
      }];
      var mapOptions = {
@@ -184,7 +189,7 @@
 
          mapTypeId: google.maps.MapTypeId.ROADMAP,
          styles: styles
-     }
+     };
      var map = new google.maps.Map(mapCanvas, mapOptions);
  }
  google.maps.event.addDomListener(window, 'load', initialize);
