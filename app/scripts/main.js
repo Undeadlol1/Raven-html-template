@@ -1,8 +1,5 @@
  'use strict';
 
-
-
-
  jQuery(document).ready(function($) {
 
      /* projects.html */
@@ -193,3 +190,7 @@
      var map = new google.maps.Map(mapCanvas, mapOptions);
  }
  google.maps.event.addDomListener(window, 'load', initialize);
+
+ //wow.js initialisation
+ //should be at the bottom to prevent conflict with pages where WoW.js is not used
+ new WOW().init();
