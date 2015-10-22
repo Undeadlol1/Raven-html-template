@@ -148,6 +148,10 @@ header {
     }
 }
 
+#services .text-center {
+    margin-bottom: 80px;
+}
+
 #services,
 #why {
     /* .services {
@@ -180,9 +184,14 @@ header {
     display: inline;
 }
 
-.suit:hover {
-    background-color: white;
-    opacity: 0.8;
+#services .suit {
+    img {
+        margin: 0;
+    }
+    &:hover {
+        background-color: white;
+        opacity: 0.8;
+    }
 }
 
 .gray-bg {
@@ -248,21 +257,6 @@ header {
             background: #ebebeb;
         }
     }
-    /* .slick-next,
-    .slick-prev {
-        transform: translate(0, -50%);
-    }
-    .slick-next:before {
-        font: 42px FontAwesome;
-        content: @fa-var-angle-right;
-        color: #bfbfbf;
-        transform: translate(50%, -50%);
-    }
-    .slick-prev:before {
-        font: 42px FontAwesome;
-        content: @fa-var-angle-left;
-        color: #bfbfbf;
-    } */
 }
 
 #testimonials {
