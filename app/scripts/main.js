@@ -5,9 +5,9 @@
      /* projects.html */
      // sort projects
 
-     $('.projectsHtml a').click(function() {
+     $('#projects-html a').click(function() {
          var attrValue = $(this).attr('data');
-         $('.projectsHtml .nav li').removeClass('active');
+         $('#projects-html .nav li').removeClass('active');
          $(this).parent().toggleClass('active');
          $('.images').show('slow');
          if (attrValue === 'all') {
